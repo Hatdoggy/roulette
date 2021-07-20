@@ -6,7 +6,11 @@ import { useMediaQuery } from 'react-responsive';
 function App() {
 
   const small = useMediaQuery({
-    query: '(max-width: 780px) and (orientation:portrait)'
+    query: '(max-width: 780px)'
+  })
+
+  const port = useMediaQuery({
+    query: '(orientation: portrait)'
   })
 
   const [ctr,updCtr] = useState(3);
@@ -22,7 +26,7 @@ function App() {
           </Route>
 
           <Route path="/main">
-            {small?
+            {(small&&port)?
               <Mobile ctr={ctr} upd={updCtr}/>
               :
               <Main ctr={ctr} upd={updCtr}/>
