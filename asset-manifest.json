@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Hatdoggy/roulette/static/js/main.b3caaf29.chunk.js",
+    "main.js.map": "/Hatdoggy/roulette/static/js/main.b3caaf29.chunk.js.map",
+    "runtime-main.js": "/Hatdoggy/roulette/static/js/runtime-main.4f379821.js",
+    "runtime-main.js.map": "/Hatdoggy/roulette/static/js/runtime-main.4f379821.js.map",
+    "static/js/2.25b205d6.chunk.js": "/Hatdoggy/roulette/static/js/2.25b205d6.chunk.js",
+    "static/js/2.25b205d6.chunk.js.map": "/Hatdoggy/roulette/static/js/2.25b205d6.chunk.js.map",
+    "static/js/3.c949753e.chunk.js": "/Hatdoggy/roulette/static/js/3.c949753e.chunk.js",
+    "static/js/3.c949753e.chunk.js.map": "/Hatdoggy/roulette/static/js/3.c949753e.chunk.js.map",
+    "index.html": "/Hatdoggy/roulette/index.html",
+    "static/js/2.25b205d6.chunk.js.LICENSE.txt": "/Hatdoggy/roulette/static/js/2.25b205d6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f379821.js",
+    "static/js/2.25b205d6.chunk.js",
+    "static/js/main.b3caaf29.chunk.js"
+  ]
+}

@@ -1,0 +1,21 @@
+/* BG for site and squares*/
+$mainGrad:linear-gradient(72.44deg, #D21FFF 0%, #E543FF 37.5%, #FF8686 81.77%, #FF9595 100%);
+$gradL:linear-gradient(to left, #D21FFF 0%, #E543FF 37.5%, #FF8686 81.77%, #FF9595 100%);
+$gradR:linear-gradient(to right, #D21FFF 0%, #E543FF 37.5%, #FF8686 81.77%, #FF9595 100%);
+$gradTL:linear-gradient(to top left, #D21FFF 0%, #E543FF 37.5%, #FF8686 81.77%, #FF9595 100%);
+$gradTR:linear-gradient(to top right, #D21FFF 0%, #E543FF 37.5%, #FF8686 81.77%, #FF9595 100%);
+
+/* BG for glass elements*/
+$glass:linear-gradient(135deg, rgba(244, 176, 255, 0.35) 0%, rgba(233, 95, 255, 0.2345) 51.04%, rgba(255, 255, 255, 0.2345) 100%);
+$slot:linear-gradient(180deg, #FFFCFF 0%, #F5BCFF 100%);
+
+/* text colors */
+$cash:rgba(141, 241, 133, 1);
+$popUp:rgba(0, 0, 0, 0.22);
+$spins:rgba(255, 226, 74, 1);
+$wht:rgba(255,255,255,1);
+$spinBtn:linear-gradient(0deg, #FFD439 0%, #FFEF7E 46.35%, #F6FF8C 100%);
+$cong:linear-gradient(0deg, #67A961 0%, #88DB81 46.35%, #8DF185 100%);
+$clk:#3f3d56;
+
+$mont:'Montserrat', sans-serif;
