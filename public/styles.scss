@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import "_def";
+@import "_var";
+@import "_structure";
+@import "_query";
+
+
+.mont{
+
+	&-reg,&-bold{
+		font-family: $mont;
+		
+	}
+	&-reg{
+		font-weight: 400;
+	}	
+	&-bold{
+		font-weight: 700;
+	}
+
+}
+
+.svgImg{
+	width: 350px;
+	height: 350px;
+}.roulImg{
+	width: 100%;
+	height: 100%;
+}.card{
+	weight:200px;
+	height:200px;
+}
+
+h1{
+	font-size: clamp(1.5rem, 2.5rem, 3rem);
+}h2{
+	font-size: clamp(1.4rem,1.5rem,2rem);
+}h4,button{
+	font-size: clamp(1.2rem,1.3rem,1.5rem);	
+}p{
+	font-size: clamp(1rem,1rem,1.3rem);
+}
