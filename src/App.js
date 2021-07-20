@@ -1,6 +1,6 @@
 import Squares,{Glass,Main,Win,Mobile} from './Components.js';
 import {useState} from 'react';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import {HashRouter as Router,Route,Switch} from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
 function App() {
