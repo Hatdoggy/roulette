@@ -57,7 +57,7 @@ export const Win = ()=>{
 				<img className="svgImg" src="./svg/winning.svg" alt="winning"/>
 
 				{/*Fix me later*/}
-				<button className="flx flx-ai-ce flx-jc-ce txt-al-ce mont-bold bg-btn-cng br-50 p-15 w-30 trans-05 txt-clr-wht m-t-2 ovr-hide">COUNTINUE</button>
+				<button className="flx flx-ai-ce flx-jc-ce txt-al-ce mont-bold bg-btn-cng br-50 p-15 w-30 trans-05 txt-clr-wht m-t-2 ovr-hide">CONTINUE</button>
 
 			</div>
 		</div>
