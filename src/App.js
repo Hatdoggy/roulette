@@ -6,7 +6,7 @@ import { useMediaQuery } from 'react-responsive';
 function App() {
 
   const small = useMediaQuery({
-    query: '(max-width: 381px)'
+    query: '(max-width: 780px) and (orientation:portrait)'
   })
 
   const [ctr,updCtr] = useState(3);
