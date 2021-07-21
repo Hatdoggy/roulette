@@ -68,19 +68,23 @@ export const Win = ()=>{
 const items = [
 	{
 		alt:"lemon",
-		src:"./svg/Lemon.svg"
+		src:"./svg/Lemon.svg",
+		id:'lemon'
 	},
 	{
 		alt:"cherry",
-		src:"./svg/Cherry.svg"
+		src:"./svg/Cherry.svg",
+		id:'cherry'
 	},
 	{
 		alt:"money",
-		src:"./svg/Money.svg"
+		src:"./svg/Money.svg",
+		id:'money'
 	},
 	{
 		alt:"bar",
-		src:"./svg/Bar.svg"
+		src:"./svg/Bar.svg",
+		id:'bar'
 	}
 ]
 
@@ -96,10 +100,10 @@ const Stat = (props)=>{
 const Item = (prop)=>{
 	return(
 	<span className={`container flx flx-col flx-jc-ce flx-ai-ce p-20 br-50 h-cust w-30 bg-wht ovr-hide trans-05 ${prop.class}`}>
-		<div className="w-100 ovr-scr-y scrbar spin scr-snp">
+		<div className="w-100 ovr-scr-y scrbar spin trans-05">
 			{items.map((elem,ndx)=>(
-				<div key={ndx} className="cont m-t-2 m-b-2 scr-algn h-100 w-100">
-					<img src={elem.src} alt={elem.alt} className={`${elem.alt} roulImg `}/>
+				<div key={ndx} className="cont m-t-2 m-b-2 scr-algn h-100 w-100 fade-spin" id={elem.id}>
+					<img src={elem.src} alt={elem.alt} className={`${elem.alt} roulImg`}/>
 				</div>
 			))}		
 		</div>
@@ -132,18 +136,16 @@ export const Main = (props)=>{
 	 const history = useHistory();
 
 	useEffect(()=>{
-		spin();
+		spin(ctr);
 	})
 
-	const click = ()=>{
-		if(ctr>1){
+	const click = async()=>{
+		if(ctr>0){
 			upd(ctr-1);
-			spin();
+			spin(ctr);		
 		}else{
-			spin(true)
-			setTimeout(()=>{
-				history.push('/win')
-			},1000)
+			await spin(ctr,true);
+			history.push('/win');
 		}
 		
 	}
@@ -154,7 +156,7 @@ export const Main = (props)=>{
 				<div className="flx flx-col flx-jc-ce flx-ai-ce bg-glass br-50 p-20 h-90 w-100">
 					<Stat ctr={ctr}/>
 					<Roulette/>
-					<button className="flx flx-ai-ce flx-jc-ce txt-al-ce mont-bold bg-btn-spn br-50 p-15 w-30 trans-05 txt-clr-wht ovr-hide m-t-2" onClick={click}>SPIN NOW</button>
+					<button className="flx flx-ai-ce flx-jc-ce txt-al-ce mont-bold bg-btn-spn br-50 p-15 w-30 trans-05 txt-clr-wht ovr-hide m-t-2" onClick={click}>{ctr===0?"CLAIM":"SPIN NOW"}</button>
 				</div>			
 			</section>
 
@@ -174,18 +176,16 @@ export const Mobile =(props)=>{
 	 const history = useHistory();
 
 	useEffect(()=>{
-		spin();
+		spin(ctr);
 	})
 
-	const click = ()=>{
-		if(ctr>1){
+	const click = async()=>{
+		if(ctr>0){
 			upd(ctr-1);
-			spin();
+			spin(ctr);		
 		}else{
-			spin(true)
-			setTimeout(()=>{
-				history.push('/win')
-			},1000)
+			await spin(ctr,true);
+			history.push('/win');
 		}
 		
 	}
@@ -196,7 +196,7 @@ export const Mobile =(props)=>{
 					<Side/>
 					<Roulette/>
 					<Stat ctr={ctr}/>
-					<button className="flx flx-ai-ce flx-jc-ce txt-al-ce mont-bold bg-btn-spn br-50 p-15 w-30 trans-05 txt-clr-wht ovr-hide m-t-2" onClick={click}>SPIN NOW</button>		
+					<button className="flx flx-ai-ce flx-jc-ce txt-al-ce mont-bold bg-btn-spn br-50 p-15 w-30 trans-05 txt-clr-wht ovr-hide m-t-2" onClick={click}>{ctr===0?"CLAIM":"SPIN NOW"}</button>		
 			</section>
 		</main>
 	)
